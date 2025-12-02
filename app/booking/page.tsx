@@ -166,7 +166,7 @@ export default function BookingPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-800 mb-2 flex items-center gap-2">
+                  <label className="text-sm font-medium text-gray-800 mb-2 flex items-center gap-2">
                     <Calendar size={16} /> Preferred Date <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -180,7 +180,7 @@ export default function BookingPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-800 mb-2 flex items-center gap-2">
+                  <label className="text-sm font-medium text-gray-800 mb-2 flex items-center gap-2">
                     <Clock size={16} /> Preferred Time <span className="text-red-500">*</span>
                   </label>
                   <select
@@ -202,7 +202,7 @@ export default function BookingPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-800 mb-2 flex items-center gap-2">
+                  <label className="text-sm font-medium text-gray-800 mb-2 flex items-center gap-2">
                     <User size={16} /> Full Name <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -216,7 +216,7 @@ export default function BookingPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-800 mb-2 flex items-center gap-2">
+                  <label className="text-sm font-medium text-gray-800 mb-2 flex items-center gap-2">
                     <Phone size={16} /> Phone Number <span className="text-red-500">*</span>
                   </label>
                   <input
@@ -232,7 +232,7 @@ export default function BookingPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-800 mb-2 flex items-center gap-2">
+                <label className="text-sm font-medium text-gray-800 mb-2 flex items-center gap-2">
                   <Mail size={16} /> Email Address <span className="text-red-500">*</span>
                 </label>
                 <input
