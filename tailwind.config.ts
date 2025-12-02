@@ -17,7 +17,6 @@ const config: Config = {
         sans: ["'Libertinus Sans'", "sans-serif"], // 👈 default
         libertinus: ["'Libertinus Sans'", "sans-serif"], // still keep a custom key
       },
-<<<<<<< HEAD
       colors: {
         // Add your custom green shades
         green: {
@@ -43,17 +42,6 @@ const config: Config = {
         zoomInOut: "zoomInOut 20s ease-in-out infinite",
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
-=======
-     keyframes: {
-  zoomInOut: {
-    "0%, 100%": { transform: "scale(1)" },
-    "50%": { transform: "scale(1.1)" },
-  },
-},
-animation: {
-  zoomInOut: "zoomInOut 20s ease-in-out infinite",
-},
->>>>>>> b0ec4a38839502217801f09da946fe20b9eb8bd0
 
     },
   },
