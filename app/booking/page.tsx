@@ -283,7 +283,7 @@ export default function BookingPage() {
           </h3>
           <ol className="list-decimal pl-5 space-y-2 text-gray-700">
             <li>Fill out the form above with your appointment details</li>
-            <li>Click the "Book Appointment" button</li>
+            <li>Click the &quot;Book Appointment&quot; button</li>
             <li>Your details are sent to our team instantly</li>
             <li>We&apos;ll contact you shortly to confirm via email</li>
             <li>If the slot is booked, we&apos;ll suggest alternate times</li>
