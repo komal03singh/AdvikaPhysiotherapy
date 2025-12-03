@@ -153,7 +153,7 @@ export default function BookingPage() {
                   name="service"
                   value={formData.service}
                   onChange={handleChange}
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm"
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm text-black"
                   required
                 >
                   <option value="">-- Choose a Service --</option>
@@ -175,7 +175,7 @@ export default function BookingPage() {
                     value={formData.date}
                     onChange={handleChange}
                     min={minDate}
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm custom-date-input"
+                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm custom-date-input text-black"
                     required
                   />
                 </div>
@@ -187,7 +187,7 @@ export default function BookingPage() {
                     name="time"
                     value={formData.time}
                     onChange={handleChange}
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm"
+                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm text-black"
                     required
                   >
                     <option value="">-- Select a Time --</option>
@@ -211,7 +211,7 @@ export default function BookingPage() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="John Doe"
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm"
+                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm text-black"
                     required
                   />
                 </div>
@@ -225,7 +225,7 @@ export default function BookingPage() {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+91 98765 43210"
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm"
+                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm text-black"
                     required
                   />
                 </div>
@@ -241,7 +241,7 @@ export default function BookingPage() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="you@example.com"
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm"
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm text-black"
                   required
                 />
               </div>
@@ -254,7 +254,7 @@ export default function BookingPage() {
                   value={formData.notes}
                   onChange={handleChange}
                   placeholder="Any specific concerns or medical history..."
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm"
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 shadow-sm text-black"
                 ></textarea>
               </div>
 

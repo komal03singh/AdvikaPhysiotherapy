@@ -8,7 +8,7 @@ export default function Footer() {
   const [message, setMessage] = useState("");
 
   const openWhatsApp = () => {
-    const phoneNumber = "917381019858";
+    const phoneNumber = "918571887858";
     const message = "Hello, I would like to book an appointment or get more information about your services.";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
@@ -111,8 +111,8 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-[#34d399]" />
-              <a href="tel:+917381019858" className="hover:text-white">
-                +91 73810 19858
+              <a href="tel:+918571887858" className="hover:text-white">
+                +91 8571887858
               </a>
             </li>
             <li className="flex items-center gap-2">
