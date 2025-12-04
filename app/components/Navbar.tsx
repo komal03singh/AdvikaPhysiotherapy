@@ -293,14 +293,6 @@ export default function Navbar() {
                   ))}
                 </div>
               </div>
-
-              <Link
-                href="/about"
-                className={`block py-3 px-4 font-medium transition-colors border-b border-gray-100 ${isActiveLink('/about') ? 'text-[#245b52] bg-[#f0f7ee]' : 'text-gray-800 hover:text-[#245b52] hover:bg-[#f0f7ee]'}`}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                About
-              </Link>
               
               <Link
                 href="/contact"
