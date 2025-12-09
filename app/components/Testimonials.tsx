@@ -23,6 +23,37 @@ export default function Testimonials() {
       name: "Himansu Maheshwari",
       image: "/himanshu.jpg",
     },
+    {
+      quote:"I recently had the pleasure of receiving treatment from Dr. Swati Sharma and I cannot recommend her highly enough.My mobility and discomfort have significantly improved thanks to her accurate and efficient hands-on approaches. In addition to her technical abilities, she possesses compassion and attentiveness, fostering a comforting and supporting environment.If you’re struggling with cervical pain, I highly recommend Dr. Swati Sharma.",
+      name: "Prachi Malik",
+      image: "/prachi.jpg",
+    },
+    {
+      quote:"It was personally a great experience with Dr. Swati Sharma she is very generous with the patient And absolutely master at her work . She totally understand the problem and then start the therapy I was very happy with the  treatment and now I feel very well after my 10days session.💕😀 …",
+      name: "Divya Shrivastava",
+      image: "/divya.jpg",
+    },
+    {
+      quote:"Had a good experience at Advika clinic was suffering from Chronic back pain for quite sometime so went for Physiotherapy The entire process was explained well and no false promises unlike many Physiotherapy clinics I have visited Drs behaviour and knowledge is at the core Recommended for people looking for Physio",
+      name: "Sanjay Pandey",
+      image: "/sanjay.jpg",
+    },
+    {
+      quote:"I can't thank [Dr. Swati sharma ] enough for their incredible care and dedication! When I first came in, my knee was swollen like an elephant’s, and my walking pattern was completely off. But with their expert guidance, motivation, and unwavering support, I’ve made a full recovery. Today, I can walk independently with confidence, something I once thought was impossible. Their professionalism, patience, and encouragement made all the difference in my healing journey. Highly recommend to anyone in need of top-notch therapy!",
+      name: "Anjali Soni",
+      image: "/anjali.jpg",
+    },
+    {
+      quote:"Dr Swati really help my wife to recover from shoulder pain and stiffness, she’s not only a good health care practitioner but also a very good human being who treat with patience and care.",
+      name: "Vishal Sharma",
+      image: "/vishal.jpg",
+    },
+    {
+      quote:"Fantastic Experience it was I was suffering from Low back pain from last one year ..but my 2 visit at Advika Physiotherapy Clinic give me 80% Relief.Thank you so much Dr Swati Sharma.",
+      name: "Neeraj Sharma",
+      image: "/neeraj.jpg",
+    },
+    
   ];
 
   const [current, setCurrent] = useState(0);
