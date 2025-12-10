@@ -26,7 +26,7 @@ export default function Testimonials() {
     {
       quote:"I recently had the pleasure of receiving treatment from Dr. Swati Sharma and I cannot recommend her highly enough.My mobility and discomfort have significantly improved thanks to her accurate and efficient hands-on approaches. In addition to her technical abilities, she possesses compassion and attentiveness, fostering a comforting and supporting environment.If you’re struggling with cervical pain, I highly recommend Dr. Swati Sharma.",
       name: "Prachi Malik",
-      image: "/prachi.jpg",
+      image: "/prachi.png",
     },
     {
       quote:"It was personally a great experience with Dr. Swati Sharma she is very generous with the patient And absolutely master at her work . She totally understand the problem and then start the therapy I was very happy with the  treatment and now I feel very well after my 10days session.💕😀 …",
@@ -41,12 +41,12 @@ export default function Testimonials() {
     {
       quote:"I can't thank [Dr. Swati sharma ] enough for their incredible care and dedication! When I first came in, my knee was swollen like an elephant’s, and my walking pattern was completely off. But with their expert guidance, motivation, and unwavering support, I’ve made a full recovery. Today, I can walk independently with confidence, something I once thought was impossible. Their professionalism, patience, and encouragement made all the difference in my healing journey. Highly recommend to anyone in need of top-notch therapy!",
       name: "Anjali Soni",
-      image: "/anjali.jpg",
+      image: "/anjali.png",
     },
     {
       quote:"Dr Swati really help my wife to recover from shoulder pain and stiffness, she’s not only a good health care practitioner but also a very good human being who treat with patience and care.",
       name: "Vishal Sharma",
-      image: "/vishal.jpg",
+      image: "/vishal.png",
     },
     {
       quote:"Fantastic Experience it was I was suffering from Low back pain from last one year ..but my 2 visit at Advika Physiotherapy Clinic give me 80% Relief.Thank you so much Dr Swati Sharma.",
@@ -76,8 +76,8 @@ export default function Testimonials() {
   }, [paused]);
 
   return (
-    <section className="bg-[#f8f7f5] py-20 relative overflow-hidden">
-      <div className="max-w-4xl mx-auto px-6 text-center">
+    <section className="min-h-screen bg-[#f8f7f5] py-20 relative overflow-hidden">
+      <div className="h-full max-w-4xl mx-auto px-6 text-center">
         {/* Title */}
         <motion.h2
           className="text-4xl md:text-6xl font-libertinus text-green-700 mb-12"
@@ -89,7 +89,7 @@ export default function Testimonials() {
         </motion.h2>
 
         {/* Testimonial Card */}
-        <div className="relative h-[300px] md:h-[350px] flex items-center justify-center">
+        <div className="relative h-auto flex items-center justify-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={current}
@@ -97,11 +97,11 @@ export default function Testimonials() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.6, ease: "easeInOut" }}
-              className="absolute bg-white shadow-lg rounded-xl p-10 w-full hover:scale-105 transition-transform duration-300"
+              className="bg-white shadow-lg rounded-xl p-10 w-full hover:scale-105 transition-transform duration-300"
               onMouseEnter={() => setPaused(true)}
               onMouseLeave={() => setPaused(false)}
             >
-              <p className="text-xl md:text-2xl text-[#1e3a8a] italic leading-relaxed mb-8 group-hover:text-[#2563eb] transition-colors">
+              <p className="text-base md:text-xl text-[#1e3a8a] italic leading-relaxed mb-8 group-hover:text-[#2563eb] transition-colors">
                 “{testimonials[current].quote}”
               </p>
 
@@ -115,7 +115,7 @@ export default function Testimonials() {
                   />
                 </div>
                 <div className="text-left">
-                  <h3 className="text-lg font-semibold text-[#1e3a8a] group-hover:text-[#2563eb] transition-colors">
+                  <h3 className="text-base md:text-base font-semibold text-[#1e3a8a] group-hover:text-[#2563eb] transition-colors">
                     {testimonials[current].name}
                   </h3>
                 </div>
