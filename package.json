@@ -19,6 +19,7 @@
     "eslint": "9.32.0",
     "eslint-config-next": "15.4.8",
     "framer-motion": "^12.23.12",
+    "googleapis": "^171.0.0",
     "lucide-react": "^0.541.0",
     "mongodb": "^6.19.0",
     "mongoose": "^8.18.0",

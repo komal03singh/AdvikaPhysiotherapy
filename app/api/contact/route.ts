@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import clientPromise from "@/lib/mongodb";
+import { sheets } from "@/lib/googleSheets";
 
 export async function POST(request: NextRequest) {
   try {
@@ -21,20 +21,22 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Connect to DB
-    const client = await clientPromise;
-    const db = client.db();
-
-    // Save contact query in DB
-    const result = await db.collection("contacts").insertOne({
-      name,
-      email,
-      message,
-      createdAt: new Date(),
-    });
+    // Append to Google Sheet
+        await sheets.spreadsheets.values.append({
+          spreadsheetId: process.env.GOOGLE_SHEET_ID_TWO!,
+          range: 'Sheet1!A:C',
+          valueInputOption: 'USER_ENTERED',
+          requestBody: {
+            values: [[
+              name,
+              email,
+              message || '',  
+            ]],
+          },
+        });
 
     return NextResponse.json(
-      { message: "Form submitted successfully", id: result.insertedId },
+      { message: "Form submitted successfully"},
       { status: 200 }
     );
   } catch (error) {

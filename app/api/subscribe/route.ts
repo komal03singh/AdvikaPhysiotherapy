@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import clientPromise from '@/lib/mongodb';
+import { sheets } from '@/lib/googleSheets';
 
 export async function POST(request: NextRequest) {
   try {
@@ -14,27 +14,21 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid email format' }, { status: 400 });
     }
 
-    const client = await clientPromise;
-    const db = client.db();
-
-    // Check if already subscribed
-    const existing = await db.collection('subscribers').findOne({ email });
-
-    if (existing) {
-      return NextResponse.json(
-        { message: 'Already subscribed' },
-        { status: 200 }
-      );
-    }
-
-    // Store subscriber
-    const result = await db.collection('subscribers').insertOne({
-      email,
-      subscribedAt: new Date(),
-    });
+    // Append to Google Sheet
+            await sheets.spreadsheets.values.append({
+              spreadsheetId: process.env.GOOGLE_SHEET_ID_THREE!,
+              range: 'Sheet1!A:B',
+              valueInputOption: 'USER_ENTERED',
+              requestBody: {
+                values: [[
+                  email,
+                  new Date().toLocaleString(), 
+                ]],
+              },
+            });
 
     return NextResponse.json(
-      { message: 'Subscription saved', id: result.insertedId },
+      { message: 'Subscription saved'},
       { status: 200 }
     );
 
