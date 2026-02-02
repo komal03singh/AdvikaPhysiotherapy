@@ -28,7 +28,11 @@ export async function POST(request: NextRequest) {
           phone,
           email,
           notes || '',
-          new Date().toLocaleString(),
+          new Date().toLocaleString("en-IN", {
+              timeZone: "Asia/Kolkata",
+              dateStyle: "medium",
+              timeStyle: "medium",
+            }),
         ]],
       },
     });
